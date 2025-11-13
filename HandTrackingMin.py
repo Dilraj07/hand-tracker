@@ -7,7 +7,7 @@ if not cap.isOpened():
     print("Error: Could not open camera.")
     exit()
 
-# 2. Initialize MediaPipe Hands
+# 2. Initialize MediaPipe Han
 mpHands = mp.solutions.hands
 
 hands = mpHands.Hands(static_image_mode=False,
@@ -54,3 +54,4 @@ while True:
     cv2.imshow("Hand Tracker", img)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
